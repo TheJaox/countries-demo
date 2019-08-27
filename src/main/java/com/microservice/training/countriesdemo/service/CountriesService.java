@@ -26,10 +26,6 @@ public class CountriesService implements ICountriesService {
   }
   
   public CountryEntity saveCountry(CountryEntity newCountry) {
-	  System.out.println("Name: " + newCountry.getName());
-	  System.out.println("Capital: " + newCountry.getCapital());
-	  System.out.println("Continent: " + newCountry.getContinent());
-	  newCountry.setCountryId(null);
 	  return contriesJpaRepository.save(newCountry);
   }
   
